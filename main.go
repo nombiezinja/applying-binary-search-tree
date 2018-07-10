@@ -6,17 +6,8 @@ import (
 	bt "github.com/nombiezinja/binarytree"
 )
 
-// value of a node must be an interface
-type Thing interface {
-	GetColour() string
-}
-
 type Bag struct {
 	Colour string
-}
-
-func (b *Bag) GetColour() string {
-	return b.Colour
 }
 
 func main() {
